@@ -365,70 +365,10 @@
 
     <script>
         // --- DATA JAVASCRIPT DARI TABEL ANDA ---
-        const progressData = [
-            {
-                opd: "BM & BK",
-                pagu_opd: "417.382.258.930",
-                icon: "🏗️",
-                kegiatan: [
-                    {
-                        nama: "Rekonstruksi Jalan",
-                        pagu_kegiatan: "393.233.458.930",
-                        bobot: "72,62",
-                        pelaksanaan: "Belum Terlaksana",
-                        realisasi_keuangan: "0,00",
-                        realisasi_fisik: "19,00",
-                        keterangan: "Keterlambatan proses, (1)Untuk paket MK, seluruh paket telah terdapat pemenang, (2)Untuk paket fisik masih tender.",
-                        rencana_aksi: "Melanjutkan proses tender.",
-                        link_pdf: "https://drive.google.com/file/d/14uOS33tLfQOCFWQ2ajiatYuWzMwnqCyN/view?usp=sharing",
-                        status_color: "red",
-                    },
-                    
-                ],
-            }, 
-            {
-                opd: "SDA & CKTR",
-                pagu_opd: "161.808.109.180",
-                icon: "💦",
-                kegiatan: [
-                    {
-                        nama: "Rehabilitasi Daerah Irigasi (D.I)",
-                        pagu_kegiatan: "82.304.109.180",
-                        bobot: "29,62",
-                        pelaksanaan: "Belum Terlaksana",
-                        realisasi_keuangan: "17,11",
-                        realisasi_fisik: "33,93",
-                        keterangan: "Proses Reviu/ PBI untuk 4 Paket pekerjaan Desain and Build.",
-                        rencana_aksi: "Proses Reviu/ PBI untuk 4 Paket pekerjaan Desain and Build.",
-                        link_pdf: "https://www.google.com/search?q=laporan+pdf+rehabilitasi+irigasi",
-                        status_color: "red",
-                    },
-                    
-                ],
-            },
-            {
-                opd: "PERKIMTAN",
-                pagu_opd: "18.050.781.300",
-                icon: "🏡",
-                kegiatan: [
-                    {
-                        nama: "Program Pengadaan Tanah untuk Kepentingan Umum (Pembebasan Lahan Sekolah Menengah Atas di Kabupaten Bone)",
-                        pagu_kegiatan: "14.850.781.300",
-                        bobot: "57,52",
-                        pelaksanaan: "Belum Terlaksana",
-                        realisasi_keuangan: "0,00",
-                        realisasi_fisik: "43,00",
-                        keterangan: "Konsultan mencetak dokumen perencanaan untuk diajukan kepada Kadis Perkimtan untuk dilakukan penetapan DPPT.",
-                        rencana_aksi: "Konsultan mencetak/print DPPT untuk diajukan kepada Kadis Perkimtan untuk dilakukan penetapan DPPT.",
-                        link_pdf: "https://www.google.com/search?q=laporan+pdf+pengadaan+tanah",
-                        status_color: "red",
-                    },
-                    
-                    
-                ],
-            },
-        ];
+        const progressData = [];
 
+// URL WEB APP ANDA DARI GOOGLE APPS SCRIPT
+const DATA_API_URL = 'https://script.google.com/macros/s/AKfycbzwMW5eZOnjuFQBOZQ6ksMLnTCeTnefZsJ-tohyoqwXzgQezvZuDIm_ByIqZqr88bGp/exec';        
         // Helper untuk format mata uang
         function formatRupiah(number) {
             return "Rp " + number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -641,3 +581,4 @@
     </footer>
 </body>
 </html>
+
